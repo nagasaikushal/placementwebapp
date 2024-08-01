@@ -159,36 +159,41 @@ body {
   }
 
   .features {
-  text-align: center;
-  margin: 50px 0;
-}
-
-.feature-grid {
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-
-.feature-item {
-  flex: 0 0 25%;
-  margin: 0 10px;
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  animation: scroll 15s linear infinite;
-}
-
-.feature-item h4 {
-  margin-bottom: 10px;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(100%);
+    text-align: center;
+    margin: 50px 0;
   }
-  100% {
-    transform: translateX(-100%);
+  
+  .feature-container {
+    overflow: hidden;
   }
-}
+  
+  .feature-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    padding: 20px 0;
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    white-space: nowrap;
+  }
+  
+  .feature-grid::-webkit-scrollbar {
+    display: none;  /* WebKit */
+  }
+  
+  .feature-item {
+    flex: 0 0 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    white-space: normal;
+  }
+  
+  .feature-item h4 {
+    margin-bottom: 10px;
+  }
