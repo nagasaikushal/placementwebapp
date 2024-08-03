@@ -80,7 +80,7 @@ function UserNavbar() {
           <FaUser />
         </IconButton>
         <ProfileDropdown show={showProfileDropdown}>
-          <DropdownLink to="/dashboard/profile">View/Edit Profile</DropdownLink>
+          <DropdownLink to="/Profile">View/Edit Profile</DropdownLink>
           <DropdownLink to="/logout">Log Out</DropdownLink>
         </ProfileDropdown>
       </NavLinks>
