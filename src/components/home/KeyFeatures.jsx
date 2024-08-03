@@ -1,44 +1,46 @@
 import React from 'react';
+
 const KeyFeatures = () => {
   const features = [
     {
       title: "Job Listings",
       description: "Browse through hundreds of job openings from top companies, tailored to your skills and preferences.",
-      imagePath: "../User/CareerPath.png"
+      imagePath: "/images/CareerPath.png"
     },
     {
       title: "Company Profiles",
       description: "Learn about potential employers, including their company culture, work environment, and values.",
-      imagePath: "/public/images/CareerPath.png"
+      imagePath: "/images/CompanyProfiles.png"
     },
     {
       title: "Interview Preparation",
       description: "Access a wide range of resources, including practice questions and tips, to help you ace your interviews.",
-      imagePath: "/path/to/interview-prep-image.jpg"
+      imagePath: "/images/InterviewPreparation.png"
     },
     {
       title: "Work Study Opportunities",
       description: "Engage in real-world projects and build your portfolio through work study programs, gaining practical experience.",
-      imagePath: "/path/to/work-study-image.jpg"
+      imagePath: "/images/WorkStudy.png"
     },
     {
       title: "Work Performance Tracking",
       description: "Track your progress and performance over time, receiving continuous feedback to help you grow professionally.",
-      imagePath: "/path/to/performance-tracking-image.jpg"
+      imagePath: "/images/PerformanceTracking.png"
     },
     {
       title: "Contact Assistance",
       description: "Receive personalized support from our team, assisting you with queries and providing guidance throughout your journey.",
-      imagePath: "/path/to/contact-assistance-image.jpg"
+      imagePath: "/images/ContactAssistance.png"
     },
     {
       title: "Career Path Guidance",
       description: "Explore various career paths and receive expert advice on choosing the right one based on your skills and interests.",
+      imagePath: "/images/CareerPath.png"
     },
     {
       title: "Career Counseling",
       description: "Benefit from one-on-one career counseling sessions, helping you make informed decisions about your career trajectory.",
-      imagePath: "/path/to/career-counseling-image.jpg"
+      imagePath: "/images/CareerCounselling.png"
     }
   ];
 
@@ -78,7 +80,7 @@ const KeyFeatures = () => {
 
   const imageStyle = {
     width: '100%',
-    height: '200px',
+    height: '220px',
     objectFit: 'cover',
     borderRadius: '8px',
     marginBottom: '15px',
