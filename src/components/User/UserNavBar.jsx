@@ -54,7 +54,7 @@ const ProfileDropdown = styled.div`
 
 const DropdownLink = styled(Link)`
   display: block;
-  color: #333;
+  color: #2b2b2b;
   text-decoration: none;
   padding: 5px 0;
   &:hover {
@@ -71,8 +71,8 @@ function UserNavbar() {
       <NavLinks>
         <NavLink to="/workshops">Workshops</NavLink>
         <NavLink to="/opportunities">Opportunities</NavLink>
+        <NavLink to="/career-path">Job Explorer</NavLink>
         <NavLink to="/feedback">Feedback</NavLink>
-        <NavLink to="/career-path">Career Path</NavLink>
         <IconButton>
           <FaBell />
         </IconButton>

@@ -2,6 +2,7 @@
 // Feedback.js
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import UserNavBar from './UserNavBar';
 
 const FeedbackForm = styled.form`
   background-color: #f8f9fa;
@@ -39,6 +40,7 @@ function Feedback() {
 
   return (
     <div>
+      <UserNavBar/>
       <h2>Provide Feedback</h2>
       <FeedbackForm onSubmit={handleSubmit}>
         <TextArea 

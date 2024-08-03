@@ -1,5 +1,4 @@
 import React from 'react';
-import CareerPath from '../User/CareerPath';
 const KeyFeatures = () => {
   const features = [
     {
@@ -35,7 +34,6 @@ const KeyFeatures = () => {
     {
       title: "Career Path Guidance",
       description: "Explore various career paths and receive expert advice on choosing the right one based on your skills and interests.",
-      imageSrc: CareerPath
     },
     {
       title: "Career Counseling",

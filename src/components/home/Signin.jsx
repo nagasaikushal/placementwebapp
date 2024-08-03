@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-
+import NavBar from './NavBar';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -71,6 +71,8 @@ function SignIn() {
   };
 
   return (
+    <div>
+      <NavBar/>
     <Container>
       <Form onSubmit={handleSubmit}>
         <Title>Sign In</Title>
@@ -90,6 +92,7 @@ function SignIn() {
         <Button type="submit">Sign In</Button>
       </Form>
     </Container>
+    </div>
   );
 }
 
